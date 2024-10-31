@@ -1,0 +1,146 @@
+/* Style général du terminal avec fond noir et texte vert */
+body {
+    font-family: monospace;
+    background-color: black;
+    color: green;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style pour le titre du terminal */
+.terminal-title {
+    color: #3498db;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+/* Conteneur principal avec défilement limité */
+#terminal {
+    border: 1px solid green;
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+/* Couleur personnalisée pour les liens */
+#terminal a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+#terminal a:hover {
+    color: #1abc9c;
+}
+
+/* Personnalisation de la barre de défilement */
+#terminal::-webkit-scrollbar {
+    width: 10px;
+}
+
+#terminal::-webkit-scrollbar-track {
+    background: black;
+}
+
+#terminal::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#terminal::-webkit-scrollbar-thumb:hover {
+    background-color: #00ff00;
+}
+
+/* Ligne d'entrée avec alignement vertical */
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour le prompt (chemin et user) */
+.prompt {
+    color: green;
+    white-space: nowrap;
+}
+
+/* Style pour l'entrée de commande */
+input {
+    background: none;
+    border: none;
+    color: green;
+    outline: none;
+    width: auto;
+    flex-grow: 1;
+    font-family: monospace;
+}
+
+/* Style pour les messages de réponse de la console */
+.console-response {
+    color: rgb(184, 223, 194);
+    margin-left: 8px;
+    font-style: normal;
+    opacity: 0.9;
+}
+
+/* Style pour les dossiers */
+.directory {
+    color: #00e676;
+    font-weight: bold;
+}
+
+/* Style pour les fichiers */
+.file {
+    color: #b39ddb;
+    font-style: italic;
+}
+
+/* Animation pour l'apparition des messages */
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Curseur animé */
+input::after {
+    content: '|';
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    50.1%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Effet de transition sur les liens et réponses console */
+#terminal a,
+.console-response {
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Couleurs et ombrage pour les bordures */
+#terminal {
+    box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.4);
+}
