@@ -1,7 +1,7 @@
 const fileSystem = {
     '/': {
         'a-propos-de-moi': {
-            'presentation.txt': "Étudiant en 3ème année de BUT Informatique, je recherche un stage de minimum 14 semaines à partir de mars 2025 en informatique. Pour en savoir plus, redirigez vous sur mon compte <a href='www.linkedin.com/in/antoine-pisson' target='_blank'>LinkedIn</a>.",
+            'presentation.txt': "Étudiant en 3ème année de BUT Informatique, je recherche un stage de minimum 14 semaines à partir de mars 2025 en informatique. Pour en savoir plus, redirigez vous sur mon compte <a href='https://www.linkedin.com/in/antoine-pisson/' target='_blank'>LinkedIn</a>.",
             'coordonnees.txt': "telephone: 06.50.34.67.72\nemail: antoine.psndh@outlook.fr\nadresse: Amiens, 80000",
             'centres-interets.txt': "Je suis particulièrement passionné par les technologies informatiques, les jeux vidéos, ainsi que les animés et mangas."
         },
@@ -69,7 +69,7 @@ Polyvalent, autonome, adaptable et habitué au travail en équipe, je suis conva
 
 👉 Me contacter :
 
-Retrouvez plus d'informations sur mon compte <a href='www.linkedin.com/in/antoine-pisson' target='_blank'>LinkedIn</a>.
+Retrouvez plus d'informations sur mon compte <a href='https://www.linkedin.com/in/antoine-pisson/' target='_blank'>LinkedIn</a>.
 
 Antoine Pisson
 Étudiant en 3ème année de BUT Informatique
