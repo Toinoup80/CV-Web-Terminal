@@ -112,7 +112,7 @@ function displayMessage(message, className = '') {
     if (className) {
         messageNode.classList.add(className);
     }
-    messageNode.classList.add('fadeIn'); // Ajout de la classe d'animation
+    messageNode.classList.add('fadeIn'); 
     terminal.insertBefore(messageNode, input.parentElement);
 }
 
@@ -138,8 +138,8 @@ input.addEventListener('keydown', function (event) {
             displayMessage(`Commande non reconnue: ${command}`);
         }
 
-        input.value = '';  // Réinitialisation de l'input après la commande
-        updatePrompt();  // Mise à jour du prompt après chaque commande
+        input.value = '';  
+        updatePrompt();  
         terminal.scrollTop = terminal.scrollHeight;  // Garde le terminal en bas après chaque commande
     }
 });
